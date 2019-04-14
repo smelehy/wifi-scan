@@ -1,20 +1,33 @@
 # wifi-scan
 Scans for available wifi networks using linux iwlist and formats output to Python dictionary
 input is a wifi interface ('wlan0') - output is a dictionary w available wifi networks
+ 
+ {1: [['Name', 'Network-1'],
+     ['Secured', 'on'],
+     ['Signal Quality', 1.0],
+     ['Signal level', -23]],
+ 
+ 2: [['Name', 'Network-2'],
+     ['Secured', 'on'],
+     ['Signal Quality', 0.76],
+     ['Signal level', -57]],
+ 
+ 3: [['Name', 'Network-3'],
+     ['Secured', 'on'],
+     ['Signal Quality', 0.87],
+     ['Signal level', -49]],
+ 
+ 4: [['Name', 'Network-4'],
+     ['Secured', 'on'],
+     ['Signal Quality', 0.99],
+     ['Signal level', -41]],
+ 
+ 5: [['Name', 'Network-5'],
+     ['Secured', 'on'],
+     ['Signal Quality', 0.43],
+     ['Signal level', -80]],
 
-
- {1 : [ ['Signal level'  , -38],
-        ['Secured'       , 'on'],
-        ['Signal Quality', 0.71],
-        ['Name'          , 'OldisOnTheManJay'],
-      ],
-
-  2 : [ ['Signal level'  , -50],
-        ['Secured'       , 'on]',
-        ['Name'          , 'OtherNetWork'],
-      ]
- }
-
+ 
 Notes:  
        1. if the 'parse_char' is not found in the string, the key/value will be ignored
 
