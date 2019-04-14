@@ -1,6 +1,8 @@
 # wifi-scan
 Scans for available wifi networks using linux iwlist and formats output to Python dictionary
 input is a wifi interface ('wlan0') - output is a dictionary w available wifi networks
+
+
  {1 : [ ['Signal level'  , -38],
         ['Secured'       , 'on'],
         ['Signal Quality', 0.71],
@@ -11,7 +13,8 @@ input is a wifi interface ('wlan0') - output is a dictionary w available wifi ne
         ['Name'          , 'OtherNetWork'],
       ]
  }
-   Notes:  
+
+Notes:  
        1. if the 'parse_char' is not found in the string, the key/value will be ignored
        2. sometimes the scan returns a SSID='\x00\x00\x00\x00'  in this case SSID will be returned as
           'Unknown'
