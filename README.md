@@ -2,7 +2,8 @@
 Scans for available wifi networks using linux iwlist and formats output to Python dictionary
 input is a wifi interface ('wlan0') - output is a dictionary w available wifi networks
  
- {1: [['Name', 'Network-1'],
+ {
+ 1: [['Name', 'Network-1'],
      ['Secured', 'on'],
      ['Signal Quality', 1.0],
      ['Signal level', -23]],
@@ -26,7 +27,7 @@ input is a wifi interface ('wlan0') - output is a dictionary w available wifi ne
      ['Secured', 'on'],
      ['Signal Quality', 0.43],
      ['Signal level', -80]],
-
+}
  
 Notes:  
        1. if the 'parse_char' is not found in the string, the key/value will be ignored
