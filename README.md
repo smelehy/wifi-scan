@@ -1,6 +1,7 @@
 # wifi-scan
-Scans for available wifi networks using linux iwlist and formats output to Python dictionary
-input is a wifi interface ('wlan0') - output is a dictionary w available wifi networks
+Scans for available wifi networks using linux iwlist and formats output to Python dictionary.  
+
+Input is a wifi interface ('wlan0') - output is a dictionary w available wifi networks
  
  {
  1: [['Name', 'Network-1'],
